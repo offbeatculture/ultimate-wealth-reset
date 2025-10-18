@@ -18,6 +18,19 @@
     <meta name="twitter:title" content="The Ultimate Wealth Reset - 3-Day Intensive" />
     <meta name="twitter:description" content="FREE 3-day intensive with India's No. 1 Financial Confidence Coach. Limited to 500 spots." />
     <meta name="twitter:image" content="https://your-cdn.com/path/to/hero.jpg" />
+  
+  <script>
+      (function () {
+        var m = /[?&]p=([^&]+)/.exec(location.search);
+        if (m) {
+          var path = decodeURIComponent(m[1]);
+          var h = /[?&]h=([^&]+)/.exec(location.search);
+          if (h) path += decodeURIComponent(h[0].slice(3));
+          history.replaceState(null, "", path);
+        }
+      })();
+    </script>
+  
   </head>
 
   <body>

@@ -12,9 +12,9 @@ import { toast } from "sonner";
 import heroImage from "@/assets/Shankar Hero Image. with title.png";
 
 /** 🔗 Replace with your real n8n endpoint */
-const WEBHOOK_URL = "https://offbeatn8n.coachswastik.com/webhook/uwr-sk";
+const WEBHOOK_URL = "https://offbeatn8n.coachswastik.com/webhook/uwr-an";
 
-export const HeroSection = () => {
+export const HeroSectionAn = () => {
   // ----- form state -----
   const [formData, setFormData] = useState({
     name: "",
@@ -67,7 +67,7 @@ export const HeroSection = () => {
         }),
       });
       if (!res.ok) throw new Error("Submission failed");
-      window.location.href = "/ty";
+      window.location.href = "/ty-an";
     } catch (err) {
       console.error(err);
       toast.error("Hmm, something went wrong. Please try again.");

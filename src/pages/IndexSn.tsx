@@ -5,6 +5,7 @@ import { DayBreakdown } from "@/components/DayBreakdown";
 import { UrgencyBar } from "@/components/UrgencyBar";
 import { LeadForm } from "@/components/LeadForm";
 import { Footer } from "@/components/Footer";
+import { HeroSectionSn } from "@/components/HeroSn";
 
 const IndexSn = () => {
   const formRef = useRef<HTMLDivElement>(null);
@@ -16,7 +17,7 @@ const IndexSn = () => {
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <HeroSection/>
+        <HeroSectionSn/>
         <DayBreakdown />
         <UrgencyBar />
       </main>

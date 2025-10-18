@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calendar, AlertCircle } from "lucide-react";
 
-const COMMUNITY_URL = "https://YOUR-COMMUNITY-LINK.example";
+const COMMUNITY_URL = "https://chat.whatsapp.com/ClWoTrm4V403Y6UfEaBkrb";
 
 const ThanksSn = () => {
   return (
