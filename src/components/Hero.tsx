@@ -155,7 +155,7 @@ export const HeroSection = () => {
                 {/* Date & Time (bold text only at top of form) */}
                 <div className="space-y-0.5" id="form">
                   <p className="text-white font-bold text-sm sm:text-base leading-snug">
-                    Date &amp; Time : 19th October 2025 11:00 AM
+                    Date &amp; Time : 23, 24, 25 October 2025 11:00 AM
                   </p>
                 </div>
 
