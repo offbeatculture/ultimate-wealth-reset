@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+@layer base {
+  :root {
+    /* Light theme (kept neutral, you’ll mostly use .dark) */
+    --background: 0 0% 99%;
+    --foreground: 220 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 15% 12%;
+
+    /* Primary = mint CTA (suitable on light too) */
+    --primary: 160 60% 40%;
+    --primary-foreground: 220 20% 5%;
+
+    /* Secondary = soft gray surfaces */
+    --secondary: 220 12% 95%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 220 12% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent = cyan/teal highlight line & chips */
+    --accent: 175 75% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Urgency (Only 10 seats left) */
+    --destructive: 0 80% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders / inputs */
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 175 75% 45%;
+
+    --radius: 0.75rem;
+
+    /* Extras (for gradients/shadows) */
+    --gradient-primary: linear-gradient(135deg, hsl(175 75% 45%), hsl(160 60% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 60% 40%), hsl(160 60% 60%));
+    --shadow-soft: 0 6px 24px -8px hsl(210 30% 10% / 0.18);
+    --shadow-medium: 0 14px 40px -12px hsl(210 30% 10% / 0.28);
+
+    /* Sidebar (if used) */
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 220 15% 20%;
+    --sidebar-primary: 175 75% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 12% 95%;
+    --sidebar-accent-foreground: 220 15% 20%;
+    --sidebar-border: 220 14% 88%;
+    --sidebar-ring: 175 75% 45%;
+  }
+
+  .dark {
+    /* Deep charcoal background from screenshot */
+    --background: 210 28% 6%;
+    --foreground: 0 0% 98%;
+
+    /* Cards = dark gray tiles behind date/time boxes */
+    --card: 210 24% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 24% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Primary = mint CTA (“Secure Your FREE Seat”) */
+    /* Note: use dark text on this mint */
+    --primary: 160 60% 72%;           /* mint button background */
+    --primary-foreground: 220 25% 10%;/* near-black text */
+
+    /* Secondary = darker surface chips/badges */
+    --secondary: 210 22% 18%;
+    --secondary-foreground: 0 0% 96%;
+
+    /* Muted copy = soft gray paragraphs */
+    --muted: 210 18% 22%;
+    --muted-foreground: 210 12% 72%;
+
+    /* Accent = cyan/teal underline & ticks */
+    --accent: 175 75% 48%;            /* vivid teal/cyan */
+    --accent-foreground: 0 0% 100%;
+
+    /* Urgency red (“Only 10 Seats Left”) */
+    --destructive: 0 78% 56%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Subtle borders (almost invisible) and focus ring */
+    --border: 210 16% 20%;
+    --input: 210 16% 20%;
+    --ring: 175 75% 48%;
+
+    /* Optional neon ring/glow around portrait */
+    --glow-green: 140 70% 52%;
+
+    /* Gradients & shadows tuned for dark UI */
+    --gradient-primary: linear-gradient(135deg, hsl(175 75% 50%), hsl(160 60% 42%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 60% 50%), hsl(160 60% 70%));
+    --shadow-soft: 0 8px 28px -10px hsl(210 30% 6% / 0.45);
+    --shadow-medium: 0 18px 50px -12px hsl(210 30% 6% / 0.55);
+
+    /* Sidebar (if used) */
+    --sidebar-background: 210 28% 6%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 175 75% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 22% 18%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 210 16% 20%;
+    --sidebar-ring: 175 75% 48%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
