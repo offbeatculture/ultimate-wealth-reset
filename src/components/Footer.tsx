@@ -11,7 +11,7 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-6 text-center">
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-muted-foreground">
-            <a href="/privacy" className="hover:text-foreground transition-colors">
+            <a href="https://sk.wealthchallenge.in/privacy-policy" className="hover:text-foreground transition-colors">
               Privacy & Terms
             </a>
           </div>
